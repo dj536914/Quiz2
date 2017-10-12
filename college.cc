@@ -1,3 +1,9 @@
+///
+/// @file college.cc
+/// Function definitions for college class
+///
+
+
 //********************
 //Matthew Aberegg
 //Project 3
@@ -69,6 +75,10 @@ College& College::operator =(const College& other){
 	return * this;
 }
 
+///
+/// Adds a class to the linked list
+/// @param c: A class course
+///
 void College::add(course& c){
 	node * previous;
 	node * cursor;
@@ -90,11 +100,11 @@ void College::add(course& c){
 		delete previous;
 	} else if(head -> data() < c){
 		cursor = head;
-		while (cursor != NULL && cursor -> data() <= c){ 
+		while (cursor != NULL && cursor -> data() <= c){
 			previous = cursor;
 			cursor = cursor-> link();
-		}	
-		if (cursor == NULL){ 
+		}
+		if (cursor == NULL){
 			cursor = new node (c);
 			cursor -> set_link(NULL);
 			previous -> set_link(cursor);
@@ -107,8 +117,11 @@ void College::add(course& c){
 	}
 }
 
+///
+/// @param coursename:	A string representing the course name to remove
+///
 void College::remove(std::string coursename){
-	node * previous;	
+	node * previous;
 	node * cursor;
 	if(coursename == head->data().get_course_number()){
 		cursor = head;
@@ -129,6 +142,9 @@ void College::remove(std::string coursename){
 }
 }
 
+///
+/// Prints everything to the screen, with course number, grade, and credit hours
+///
 void College::display(std::ostream& outs){
 	node * ptr;
 	ptr = head;
@@ -144,7 +160,9 @@ void College::display(std::ostream& outs){
 	outs << "\n";
 }
 
-
+///
+/// Returns the total number of credit hours taken
+///
 double College::hours(){
 	node * ptr;
 	ptr = head;
@@ -156,6 +174,9 @@ double College::hours(){
 return hours;
 }
 
+///
+/// @return		The sum of every grade divided by the total number of credit hours
+///
 double College::gpa(){
 	node * ptr;
 	ptr = head;
@@ -165,8 +186,11 @@ double College::gpa(){
 	ptr = ptr->link();
 	}
 	return (sum / hours());
-} 
+}
 
+///
+/// Saves the output to the outstream
+///
 void College::save(std::ostream& outs){
 	node * ptr;
 	ptr = head;
@@ -176,6 +200,9 @@ void College::save(std::ostream& outs){
 	}
 }
 
+///
+/// @param Input from the user
+///
 void College::load(std::istream& ins){
 	course tmp;
 	ins >> tmp;
@@ -193,11 +220,3 @@ void College::load(std::istream& ins){
 		ptr -> set_link (NULL);
   }
 }
-
-
-
-
-
-
-
-

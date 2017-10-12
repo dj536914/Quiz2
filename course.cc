@@ -3,6 +3,12 @@
 	course.
 		John Dolan		School of EECS		Summer2013
 **************************************************************************/
+
+///
+/// @file: course.cc
+/// Function definitions of the course class
+///
+
 #include "course.h"
 #include<cstdlib>
 #include<iostream>
@@ -14,6 +20,10 @@ course::course(){
     hours = 0.0;
 }
 
+///
+/// @param ins: input from the user for details about the class's course, grade
+/// and credit hours
+///
 void course::input(std::istream& ins){
     if(ins == cin){
 	cout<<"Course Number: ";
@@ -52,7 +62,9 @@ void course::output(std::ostream& outs)const{
       }
 }
 
-
+///
+/// @return The value of credits received for every letter grade
+///
 double course::get_number_grade()const{
     if(grade == "A") return 4.0;
     if(grade == "A-") return 3.667;
@@ -60,15 +72,20 @@ double course::get_number_grade()const{
     if(grade == "B") return 3.0;
     if(grade == "B-") return 2.667;
     if(grade == "C+") return 2.333;
-    if(grade == "C") return 2.0; 
+    if(grade == "C") return 2.0;
     if(grade == "C-") return 1.667;
-    if(grade == "D+") return 1.333; 
+    if(grade == "D+") return 1.333;
     if(grade == "D") return 1.0;
-    if(grade == "D-") return 0.667; 
+    if(grade == "D-") return 0.667;
     if(grade == "F") return 0.0;
     else return 0;
 }
 
+///
+/// @param num: The number representing the course
+/// @param grad: The current crade in the course
+/// @param hrs: The number of credit hours the course is worth
+///
 void course::set_course(std::string num, std::string grad, double hrs){
 	course_number = num;
 	grade = grad;
@@ -85,6 +102,9 @@ ostream& operator <<(ostream& outs, const course& c){
     return outs;
 }
 
+///
+/// Converts the course name to uppercase letters
+///
 void course::upper_course(){
     for(int i =0; i<course_number.length(); ++i)
 	course_number[i] = toupper(course_number[i]);

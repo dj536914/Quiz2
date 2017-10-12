@@ -5,6 +5,11 @@
 //10/8/2015
 //********************
 
+///
+/// @file college.h
+/// College class function headers
+///
+
 #include <iostream>
 #include <fstream>
 #include <string>

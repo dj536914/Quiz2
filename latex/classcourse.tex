@@ -1,0 +1,85 @@
+\hypertarget{classcourse}{}\section{course Class Reference}
+\label{classcourse}\index{course@{course}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcourse_a0a8839f2369903101399bca60547aed2}{input} (std\+::istream \&ins)
+\item 
+\mbox{\Hypertarget{classcourse_afdd5ccf71bbbb7797b75854f16bf373f}\label{classcourse_afdd5ccf71bbbb7797b75854f16bf373f}} 
+void {\bfseries output} (std\+::ostream \&outs) const
+\item 
+\mbox{\Hypertarget{classcourse_a8b2f74ab01eae52d779979887fc3b079}\label{classcourse_a8b2f74ab01eae52d779979887fc3b079}} 
+std\+::string {\bfseries get\+\_\+course\+\_\+number} () const
+\item 
+\mbox{\Hypertarget{classcourse_a5008b6a7c44047fefa1c7779b771aad4}\label{classcourse_a5008b6a7c44047fefa1c7779b771aad4}} 
+std\+::string {\bfseries get\+\_\+grade} () const
+\item 
+\mbox{\Hypertarget{classcourse_a09f7b2b40cbbb81c94e0642d5b13663e}\label{classcourse_a09f7b2b40cbbb81c94e0642d5b13663e}} 
+double {\bfseries get\+\_\+hours} () const
+\item 
+double \hyperlink{classcourse_aad43a6b7ce264bd4038472fc3e40cf16}{get\+\_\+number\+\_\+grade} () const
+\item 
+void \hyperlink{classcourse_a1fce1a16efb3f07d0da5daca8005e4a6}{set\+\_\+course} (std\+::string num, std\+::string grad, double hrs)
+\item 
+\mbox{\Hypertarget{classcourse_aa47eab66d21e10a44ff77f634406face}\label{classcourse_aa47eab66d21e10a44ff77f634406face}} 
+bool {\bfseries operator$<$} (const \hyperlink{classcourse}{course} \&c) const
+\item 
+\mbox{\Hypertarget{classcourse_ab96de818d7b97e4e259fc6add5e0bc54}\label{classcourse_ab96de818d7b97e4e259fc6add5e0bc54}} 
+bool {\bfseries operator$<$=} (const \hyperlink{classcourse}{course} \&c) const
+\item 
+\mbox{\Hypertarget{classcourse_a16df685718a7ca9e98408b65109897b6}\label{classcourse_a16df685718a7ca9e98408b65109897b6}} 
+bool {\bfseries operator$>$} (const \hyperlink{classcourse}{course} \&c) const
+\item 
+\mbox{\Hypertarget{classcourse_ad15d2508cfb6d22103aaec608bcfdc74}\label{classcourse_ad15d2508cfb6d22103aaec608bcfdc74}} 
+bool {\bfseries operator$>$=} (const \hyperlink{classcourse}{course} \&c) const
+\item 
+\mbox{\Hypertarget{classcourse_aafce75fc85cdb94a5a08eaaba359da16}\label{classcourse_aafce75fc85cdb94a5a08eaaba359da16}} 
+bool {\bfseries operator==} (const \hyperlink{classcourse}{course} \&c) const
+\item 
+\mbox{\Hypertarget{classcourse_ae01c5e2445600d485da28e0ba7c48b3a}\label{classcourse_ae01c5e2445600d485da28e0ba7c48b3a}} 
+bool {\bfseries operator!=} (const \hyperlink{classcourse}{course} \&c) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcourse_aad43a6b7ce264bd4038472fc3e40cf16}\label{classcourse_aad43a6b7ce264bd4038472fc3e40cf16}} 
+\index{course@{course}!get\+\_\+number\+\_\+grade@{get\+\_\+number\+\_\+grade}}
+\index{get\+\_\+number\+\_\+grade@{get\+\_\+number\+\_\+grade}!course@{course}}
+\subsubsection{\texorpdfstring{get\+\_\+number\+\_\+grade()}{get\_number\_grade()}}
+{\footnotesize\ttfamily double course\+::get\+\_\+number\+\_\+grade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+The value of credits received for every letter grade 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcourse_a0a8839f2369903101399bca60547aed2}\label{classcourse_a0a8839f2369903101399bca60547aed2}} 
+\index{course@{course}!input@{input}}
+\index{input@{input}!course@{course}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily void course\+::input (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{ins }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ins} & input from the user for details about the class\textquotesingle{}s course, grade and credit hours \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcourse_a1fce1a16efb3f07d0da5daca8005e4a6}\label{classcourse_a1fce1a16efb3f07d0da5daca8005e4a6}} 
+\index{course@{course}!set\+\_\+course@{set\+\_\+course}}
+\index{set\+\_\+course@{set\+\_\+course}!course@{course}}
+\subsubsection{\texorpdfstring{set\+\_\+course()}{set\_course()}}
+{\footnotesize\ttfamily void course\+::set\+\_\+course (\begin{DoxyParamCaption}\item[{std\+::string}]{num,  }\item[{std\+::string}]{grad,  }\item[{double}]{hrs }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & The number representing the course \\
+\hline
+{\em grad} & The current crade in the course \\
+\hline
+{\em hrs} & The number of credit hours the course is worth \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{course_8h}{course.\+h}\item 
+\hyperlink{course_8cc}{course.\+cc}\end{DoxyCompactItemize}

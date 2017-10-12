@@ -1,0 +1,97 @@
+\hypertarget{class_college}{}\section{College Class Reference}
+\label{class_college}\index{College@{College}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_college_adabaf4087355e83f9f7d39f1e1498b41}\label{class_college_adabaf4087355e83f9f7d39f1e1498b41}} 
+{\bfseries College} (std\+::string s)
+\item 
+\mbox{\Hypertarget{class_college_ad007ad488e5a7ef986114080d0c8e101}\label{class_college_ad007ad488e5a7ef986114080d0c8e101}} 
+{\bfseries College} (const \hyperlink{class_college}{College} \&other)
+\item 
+\mbox{\Hypertarget{class_college_af2194c9b37f80d13dc3fdba6784b18e8}\label{class_college_af2194c9b37f80d13dc3fdba6784b18e8}} 
+\hyperlink{class_college}{College} \& {\bfseries operator=} (const \hyperlink{class_college}{College} \&other)
+\item 
+void \hyperlink{class_college_a67fd1d8970b46b24ce2e0dd72598a22f}{add} (\hyperlink{classcourse}{course} \&c)
+\item 
+void \hyperlink{class_college_a4d2ae513b36e6421fb1ca2c08459cfe6}{remove} (std\+::string coursename)
+\item 
+void \hyperlink{class_college_a52ca0a164483cf5c05591cd0fb8b300c}{display} (std\+::ostream \&outs)
+\item 
+double \hyperlink{class_college_a8a7a762611a1d7e00c453390d49355fd}{hours} ()
+\item 
+double \hyperlink{class_college_aaf9bfaa0bc717e96da6365661a96fcd0}{gpa} ()
+\item 
+void \hyperlink{class_college_af6b419f813bc990c0e11f99b78a26899}{save} (std\+::ostream \&outs)
+\item 
+void \hyperlink{class_college_a11422094ddd907705daede7aa537dd73}{load} (std\+::istream \&ins)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_college_a67fd1d8970b46b24ce2e0dd72598a22f}\label{class_college_a67fd1d8970b46b24ce2e0dd72598a22f}} 
+\index{College@{College}!add@{add}}
+\index{add@{add}!College@{College}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void College\+::add (\begin{DoxyParamCaption}\item[{\hyperlink{classcourse}{course} \&}]{c }\end{DoxyParamCaption})}
+
+Adds a class to the linked list 
+\begin{DoxyParams}{Parameters}
+{\em c} & A class course \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_college_a52ca0a164483cf5c05591cd0fb8b300c}\label{class_college_a52ca0a164483cf5c05591cd0fb8b300c}} 
+\index{College@{College}!display@{display}}
+\index{display@{display}!College@{College}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void College\+::display (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{outs }\end{DoxyParamCaption})}
+
+Prints everything to the screen, with course number, grade, and credit hours \mbox{\Hypertarget{class_college_aaf9bfaa0bc717e96da6365661a96fcd0}\label{class_college_aaf9bfaa0bc717e96da6365661a96fcd0}} 
+\index{College@{College}!gpa@{gpa}}
+\index{gpa@{gpa}!College@{College}}
+\subsubsection{\texorpdfstring{gpa()}{gpa()}}
+{\footnotesize\ttfamily double College\+::gpa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The sum of every grade divided by the total number of credit hours 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_college_a8a7a762611a1d7e00c453390d49355fd}\label{class_college_a8a7a762611a1d7e00c453390d49355fd}} 
+\index{College@{College}!hours@{hours}}
+\index{hours@{hours}!College@{College}}
+\subsubsection{\texorpdfstring{hours()}{hours()}}
+{\footnotesize\ttfamily double College\+::hours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the total number of credit hours taken \mbox{\Hypertarget{class_college_a11422094ddd907705daede7aa537dd73}\label{class_college_a11422094ddd907705daede7aa537dd73}} 
+\index{College@{College}!load@{load}}
+\index{load@{load}!College@{College}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void College\+::load (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{ins }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Input} & from the user \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_college_a4d2ae513b36e6421fb1ca2c08459cfe6}\label{class_college_a4d2ae513b36e6421fb1ca2c08459cfe6}} 
+\index{College@{College}!remove@{remove}}
+\index{remove@{remove}!College@{College}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void College\+::remove (\begin{DoxyParamCaption}\item[{std\+::string}]{coursename }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em coursename} & A string representing the course name to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_college_af6b419f813bc990c0e11f99b78a26899}\label{class_college_af6b419f813bc990c0e11f99b78a26899}} 
+\index{College@{College}!save@{save}}
+\index{save@{save}!College@{College}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void College\+::save (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{outs }\end{DoxyParamCaption})}
+
+Saves the output to the outstream 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{college_8h}{college.\+h}\item 
+\hyperlink{college_8cc}{college.\+cc}\end{DoxyCompactItemize}
